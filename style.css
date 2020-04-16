@@ -1,0 +1,135 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+
+
+footer {
+    text-align:center;
+}
+.calc {
+  width: 30vw;
+  max-width: 600px;
+  margin: auto;
+  border: 5px solid black;
+  borde-radius:30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-box {
+  border: 2px dotted blue;
+  border-radius:5px;
+  height: 15vh;
+  width: 100%;
+  margin:0;
+  background-color:yellow;
+}
+
+.result {
+  text-align: right;
+  font-size: 3em;
+  padding: 0 1em;
+  height: 80%;
+}
+
+.button {
+  height: 10vh;
+  width: 25%;
+  margin: 0;
+}
+
+.calc-btn {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.button> .equal {
+  height: 200%;
+}
+
+.zero {
+  height: 10vh;
+  width: 50%;
+  margin: 0;
+}
+
+.number {
+  border: 2px solid rgb(32, 77, 116);
+  border-radius:4px;
+  border-color:black;
+  margin:1px;
+  background-color:red;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count:infinite;
+}
+
+.number:hover {
+ cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.equal {
+  background-color: rgb(68, 157, 68);
+  border: 1px solid rgb(57, 132, 57);
+}
+
+.equal:hover{
+  background-color:rgb(177,87,35);
+}
+.op {
+  background-color: rgb(49, 176, 213);
+  border: 1px solid rgb(38, 154, 188);
+}
+.op:hover{
+  background-color:rgb(143,188,35);
+}
+
+.ctrl {
+  background-color: rgb(236, 151, 31);
+  border: 1px solid rgb(213, 133, 18);
+}
+
+.ctrl:hover{
+  background-color:black;
+}
+
+.titl{
+  font-style: oblique;
+  margin-bottom: 25px;
+  color:green;
+  font-size:38px;
+  
+}
